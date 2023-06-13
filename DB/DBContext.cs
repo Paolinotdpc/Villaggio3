@@ -11,6 +11,10 @@ namespace MVC_TDPC.DB
         }
         public DbSet<Person> Persons { get; set; }
 
+        public DbSet<EsperienzeModel> Esperienze { get; set; }
+
+        public DbSet<UserModel> User { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
